@@ -18,7 +18,7 @@ def _llm_model() -> llm.LLM:
 
 @pytest.mark.asyncio
 async def test_slot_scheduling() -> None:
-    tz = tz = ZoneInfo(TIMEZONE)
+    tz = ZoneInfo(TIMEZONE)
     today = datetime.now(tz).date()
 
     # fmt: off
